@@ -54,9 +54,13 @@
         </div>
 
         <div class="flex justify-center gap-4">
-            <a href="https://arxiv.org/pdf/2505.09166#.pdf" class="flex items-center gap-2 bg-gray-900 text-white px-6 py-2 rounded-full hover:bg-gray-700 transition">
+            <a href="https://arxiv.org/pdf/2505.09166#.pdf" class="flex items-center gap-2 bg-gray-900 text-white px-6 py-2 rounded-full hover:bg-gray-700 transition" title="PDF">
                 <i data-lucide="file-text" class="w-4 h-4"></i>
                 <span>Paper</span>
+            </a>
+            <a href="https://huggingface.co/datasets/tti-dev/default-images" class="flex items-center gap-2 bg-gray-100 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-200 transition border border-gray-300" target="_blank">
+                <i data-lucide="hard-drive-download" class="w-4 h-4"></i>
+                <span>Dataset</span>
             </a>
             <a href="https://arxiv.org/abs/2505.09166" class="flex items-center gap-2 bg-gray-100 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-200 transition border border-gray-300">
                 <i data-lucide="external-link" class="w-4 h-4"></i>
@@ -126,13 +130,18 @@
 
     <!-- Abstract -->
     <section class="max-w-3xl mx-auto px-4 mb-16">
-        <h2 class="text-2xl font-bold mb-4 border-l-4 border-blue-500 pl-4">Abstract</h2>
-        <p class="text-gray-700 leading-relaxed serif text-lg text-justify">
-            In the creative practice of text-to-image (TTI) generation, images are synthesized from textual prompts. By design, TTI models always yield an output, even if the prompt contains unknown terms. In this case, the model may generate <strong>default images</strong>: images that closely resemble each other across many unrelated prompts. Studying default images is valuable for designing better solutions for prompt engineering and TTI generation.
-            <br><br>
-            We present the first investigation into default images on Midjourney. We describe an initial study in which we manually created input prompts triggering default images, and several ablation studies. Building on these, we conduct a computational analysis of over <strong>750,000 images</strong>, revealing consistent default images across unrelated prompts. We also conduct an online user study investigating how default images may affect user satisfaction.
-        </p>
+                <h2 class="text-2xl font-bold mb-4 border-l-4 border-blue-500 pl-4">Abstract</h2>
+                <p class="text-gray-700 leading-relaxed serif text-lg text-justify">
+                    In the creative practice of text-to-image (TTI) generation, images are synthesized from textual prompts. By design, TTI models always yield an output, even if the prompt contains unknown terms. In this case, the model may generate <strong>default images</strong>: images that closely resemble each other across many unrelated prompts. Studying default images is valuable for designing better solutions for prompt engineering and TTI generation.
+                    <br><br>
+                    We present the first investigation into default images on Midjourney. We describe an initial study in which we manually created input prompts triggering default images, and several ablation studies. Building on these, we conduct a computational analysis of over <strong>750,000 images</strong>, revealing consistent default images across unrelated prompts. We also conduct an online user study investigating how default images may affect user satisfaction.
+                </p>
+                <p class="mt-12 text-gray-700 leading-relaxed serif text-lg text-justify">
+                    <i data-lucide="hard-drive-download" class="w-12 h-12 text-green-500 mt-1 flex-shrink-0 inline"></i>
+                    <span class="text-gray-700"><strong>Dataset:</strong> <a href="https://huggingface.co/datasets/tti-dev/default-images" target="_blank">https://huggingface.co/datasets/tti-dev/default-images</a></span>
+                </p>
     </section>
+
 
     <!-- What are Default Images? (Fig 2 Simulation) -->
     <section class="bg-gray-50 py-16">
